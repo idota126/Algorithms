@@ -1,7 +1,6 @@
-[TOC]
+
 # Algorithms Learn
-
-
+[TOC]
 ###HeapSort (堆排序)
 
 堆得定义：
@@ -32,6 +31,7 @@
 [摸鱼小队算法学习](https://github.com/AlgorithmClub/Algorithms/blob/master/lectures/lecture1.ipynb)
 
 具体代码见```src/heapSort```
+
 ###快速排序
 //TODO 快速排序
 
