@@ -1,6 +1,8 @@
 
 # Algorithms Learn
+
 [TOC]
+
 ###HeapSort (堆排序)
 
 堆得定义：
