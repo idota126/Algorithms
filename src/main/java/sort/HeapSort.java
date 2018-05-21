@@ -14,14 +14,14 @@ public class HeapSort {
      */
     public static void sort(int[] arr) {
         //1.建堆
-        arr = buildHeap(arr, 0);
+        arr = buildHeap_1(arr, 0);
         //2.调整然后继续建立堆;
         for (int i = 0; 0 < arr.length - i; ) {
             int temp = arr[0];
             arr[0] = arr[arr.length - 1 - i];
             arr[arr.length - 1 - i] = temp;
             i++;
-            arr = buildHeap(arr, i);
+            arr = buildHeap_1(arr, i);
         }
         for (int i : arr) {
             System.out.printf("%d,", i);
@@ -30,13 +30,13 @@ public class HeapSort {
 
 
     /**
-     * 建立堆结构
+     * 建立堆结构 时间复杂度 为O(n)
      *
      * @param arr
      * @param n
      * @return
      */
-    private static int[] buildHeap(int[] arr, int n) {
+    private static int[] buildHeap_1(int[] arr, int n) {
         int length = arr.length - n;
         for (int i = (length / 2) - 1; i >= 0; i--) {
             int leftIndex = i * 2 + 1;
@@ -62,6 +62,17 @@ public class HeapSort {
             }
 
         }
+        return arr;
+    }
+    /**
+     * 建立堆结构 时间复杂度 为O(n*logn)
+     *
+     * @param arr
+     * @param n
+     * @return
+     */
+    private static int[] buildHeap_2(int[] arr, int n) {
+        //TODO
         return arr;
     }
 
